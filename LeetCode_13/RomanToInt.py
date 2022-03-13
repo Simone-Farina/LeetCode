@@ -11,6 +11,7 @@ class Solution:
         }
 
     def romanToInt(self, s: str) -> int:
+        # get a list where each roman letter is converted to int
         values = list(map(lambda x: self.mapping[x], list(s)))
 
         result = 0
